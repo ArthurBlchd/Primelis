@@ -39,6 +39,7 @@ export default function Home() {
   const handleVideoError = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
     console.error("Erreur video:", e);
   };
+  
 
   const handleCardClick = (id: number) => {
     setActiveCard(activeCard === id ? null : id);
