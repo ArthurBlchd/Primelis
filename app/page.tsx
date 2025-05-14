@@ -38,8 +38,8 @@ export default function Home() {
 
   // 🚀 Fix video error type definitively
   const handleVideoError = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
-    console.error("Erreur video:", e);
-  };
+    console.error("Erreur video:", e); // ✅ Fixed typing for Vercel
+  };  
   
 
   const handleCardClick = (id: number) => {
@@ -193,6 +193,7 @@ const handleMouseLeave = (card: HTMLDivElement) => {
   }, []);
 
   return (
+    
     <main className="min-h-screen bg-[#1C1C1C] overflow-x-hidden">
       <div
         className="relative"
@@ -256,6 +257,9 @@ const handleMouseLeave = (card: HTMLDivElement) => {
             </div>
           </div>
         </header>
+
+        <p>🚧 Debug: vidéo fixée</p>
+
 
         {/* Hero Section avec grille */}
         <section className="relative min-h-screen px-4 md:px-12 z-10 border-b border-gray-700 mt-16">
