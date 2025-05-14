@@ -226,7 +226,7 @@ const handleMouseLeave = (card: HTMLDivElement) => {
                 <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
                   <li>
   <a
-    href="/CV_ArthurBlanchard_Primelis.pdf" // path to your resume file
+    href="/CV_ArthurBlanchard_Primelis_2025.pdf" // path to your resume file
     download
     className="text-gray-300 hover:text-white transition-colors text-sm md:text-base"
     onClick={() => setIsMenuOpen(false)}
