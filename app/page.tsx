@@ -479,10 +479,10 @@ const handleMouseLeave = (card: HTMLDivElement) => {
           logo: "/Shopify.png"
         },
         {
-          name: "Bricks Builder",
+          name: "Screaming Frog",
           category: "Web Design",
           description: "Création de landing pages flexibles et performantes sur WordPress.",
-          logo: "/public/bricks.png"
+          logo: "/public/Screamingfrog.png"
         },
       ].map((tool, i) => (
         <div key={i} className="relative group">
