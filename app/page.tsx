@@ -226,7 +226,7 @@ const handleMouseLeave = (card: HTMLDivElement) => {
                 <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
                   <li>
   <a
-    href="/Resume_Arthur_Blanchard.pdf" // path to your resume file
+    href="/CV_ArthurBlanchard_Primelis.pdf" // path to your resume file
     download
     className="text-gray-300 hover:text-white transition-colors text-sm md:text-base"
     onClick={() => setIsMenuOpen(false)}
@@ -257,9 +257,6 @@ const handleMouseLeave = (card: HTMLDivElement) => {
             </div>
           </div>
         </header>
-
-        <p>🚧 Debug: vidéo fixée</p>
-
 
         {/* Hero Section avec grille */}
         <section className="relative min-h-screen px-4 md:px-12 z-10 border-b border-gray-700 mt-16">
