@@ -35,7 +35,9 @@ export default function Home() {
   useContactFadeIn(); // 👉 ajoute ceci ici
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const handleVideoError = (e) => console.error("Erreur video:", e);
+  const handleVideoError = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
+    console.error("Erreur video:", e);
+  };
   const handleCardClick = (id) => setActiveCard(activeCard === id ? null : id);
 
   const handleMouseEnter = (card) => {
