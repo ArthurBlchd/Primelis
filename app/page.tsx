@@ -56,7 +56,7 @@ export default function Home() {
     }
   };
 
-  const handleMouseLeave = (card: HTMLDivElement) => {
+const handleMouseLeave = (card: HTMLDivElement) => {
     if (!card.classList.contains("active")) {
       const overlay = card.querySelector(".overlay") as HTMLDivElement | null;
       const text = card.querySelector(".text-content") as HTMLElement | null;
