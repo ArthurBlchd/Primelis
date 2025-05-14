@@ -25,40 +25,52 @@ import ProjectSection from "./components/ProjectSection";
 import TimelineSection from './components/TimelineSection';
 import { useContactFadeIn } from "../hooks/contactAnimation";
 
-
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const videoRef = useRef(null);
-  const [activeCard, setActiveCard] = useState(null);
-  const [activeStep, setActiveStep] = useState(null);
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+  const [activeStep, setActiveStep] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  useContactFadeIn(); // 👉 ajoute ceci ici
+  useContactFadeIn();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   const handleVideoError = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
     console.error("Erreur video:", e);
   };
-  const handleCardClick = (id) => setActiveCard(activeCard === id ? null : id);
 
-  const handleMouseEnter = (card) => {
+  const handleCardClick = (id: number) => {
+    setActiveCard(activeCard === id ? null : id);
+  };
+
+  const handleMouseEnter = (card: HTMLDivElement) => {
     if (!card.classList.contains("active")) {
-      const overlay = card.querySelector(".overlay");
-      const text = card.querySelector(".text-content");
-      overlay.style.width = "33%";
-      text.style.color = "#000";
+      const overlay = card.querySelector(".overlay") as HTMLDivElement | null;
+      const text = card.querySelector(".text-content") as HTMLElement | null;
+
+      if (overlay && text) {
+        overlay.style.width = "33%";
+        text.style.color = "#000";
+      }
     }
   };
 
-  const handleMouseLeave = (card) => {
+  const handleMouseLeave = (card: HTMLDivElement) => {
     if (!card.classList.contains("active")) {
-      const overlay = card.querySelector(".overlay");
-      const text = card.querySelector(".text-content");
-      overlay.style.width = "0";
-      text.style.color = "transparent";
+      const overlay = card.querySelector(".overlay") as HTMLDivElement | null;
+      const text = card.querySelector(".text-content") as HTMLElement | null;
+
+      if (overlay && text) {
+        overlay.style.width = "0";
+        text.style.color = "transparent";
+      }
     }
   };
 
-  const handleStepClick = (index) => setActiveStep(activeStep === index ? null : index);
+  const handleStepClick = (index: number) => {
+    setActiveStep(activeStep === index ? null : index);
+  };
 
   const services = [
     { id: 1, icon: "WWW", title: "Website Creation", link: "#" },
@@ -141,13 +153,11 @@ export default function Home() {
         "Après 18 mois aux USA à piloter des projets SEO/SEA, je suis revenu à Paris avec une seule ambition : rejoindre une agence comme Primelis. En retour, vous gagnez un profil opérationnel, autonome et orienté performance, capable de s’adapter vite.",
     },
   ];
-  
 
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
   const timelineRef = useRef<HTMLDivElement | null>(null);
   const progressRef = useRef<HTMLDivElement | null>(null);
   const sectionRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -496,7 +506,7 @@ export default function Home() {
   </div>
 </section>
 
-/* ✅ contactSection.jsx — À coller dans le return de ton composant principal */
+
 
 <section className="bg-[#1C1C1C] text-white py-20 px-6 md:px-12" id="contact-section">
   <div className="max-w-[800px] mx-auto text-center">
