@@ -148,11 +148,11 @@ const handleMouseLeave = (card: HTMLDivElement) => {
         "18 mois aux États-Unis chez WineEmotion USA où je travaille sur les sujets SEO, SEA, emailing, prospection, amélioration de la conversion, et je commenc à coder. Sans oublier l'anglais !",
     },
     {
-      title: "Retour en France - Je candidate chez Primelis Agency",
+      title: "Retour en France - pour rejoindre une agence",
       date: "2024 – Aujourd’hui",
       image: "/Logo_Step_3.png",
       description:
-        "Après 18 mois aux USA à piloter des projets SEO/SEA, je suis revenu à Paris avec une seule ambition : rejoindre une agence comme Primelis. En retour, vous gagnez un profil opérationnel, autonome et orienté performance, capable de s’adapter vite.",
+        "Après 18 mois aux USA à piloter des projets SEO/SEA, je suis revenu en France pour cette fois-ci travaillé sur différents projets en agence. Je suis un profil opérationnel, autonome et orienté performance, capable de s’adapter vite.",
     },
   ];
 
