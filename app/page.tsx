@@ -307,7 +307,7 @@ const handleMouseLeave = (card: HTMLDivElement) => {
                   transition={{ duration: 0.8, delay: 0.6 }}
                   className="text-sm text-gray-400 max-w-[300px] text-center md:text-left"
                 >
-                Après 18 mois d’expérience en marketing digital aux États-Unis, je cherche à rejoindre une agence ambitieuse comme Primelis pour continuer à faire croître des marques grâce au SEO & Google Ads
+                Après 18 mois d’expérience en marketing digital aux États-Unis, je cherche à rejoindre une agence pour continuer à faire croître des marques grâce au SEO & Google Ads
                 </motion.p>
               </div>
 
@@ -364,7 +364,7 @@ const handleMouseLeave = (card: HTMLDivElement) => {
         Après un Master en Communication et Marketing puis une formation en Growth Marketing, J’ai quitté la France pour m’installer aux États-Unis pendant 18 mois. J’ai rejoint WineEmotion USA, une entreprise qui équipe les plus beaux hôtels, bars à vins, lounge, aéroports et stades américains avec des distributeurs de vin haut de gamme.<br /><br />
         J’y ai géré ces leviers digitaux : SEO, campagnes Google Ads, refontes de pages web, emailing, cold emailing, prospection.
         <br /><br />
-        Aujourd’hui de retour à Paris, je suis à la recherche d’une opportunité chez Primelis où je pourrai mettre en application mes compétences, apprendre, et contribuer à des projets ambitieux.
+        Aujourd’hui de retour à Paris, je suis à la recherche d’une opportunité en agence où je pourrai mettre en application mes compétences, apprendre, et contribuer à des projets ambitieux.
       </p>
       <button
   className="mt-4 px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-br from-[#6464ec] to-[#555bd0] hover:from-[#6464ec]/90 hover:to-[#555bd0]/90 transition"
